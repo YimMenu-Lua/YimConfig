@@ -68,3 +68,7 @@ config_test:add_imgui(function()
   end
 end)
 ```
+## Credits
+
+- [Harmless](https://github.com/harmless05) For the original code.
+- [rxi](https://github.com/rxi) For the [json library](https://github.com/rxi/json.lua).
