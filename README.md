@@ -24,7 +24,7 @@ Universal Config System For YimMenu-Lua
 
 ```Lua
 config_test = gui.add_tab("Config Test")
-CFG         = require("/includes/YimConfig")
+CFG         = require("YimConfig")
 SCRIPT_NAME = "config_test"
 DEFAULT_CONFIG = {
   bool_1 = false,
