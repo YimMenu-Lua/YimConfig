@@ -8,7 +8,7 @@ Universal Config System For YimMenu-Lua
 ## Setup
 
 1. In your main script folder, add a new folder and name it "includes".
-2. Download [YimConfig.lua](link-to-release) and place it inside the /includes folder.
+2. Download [YimConfig.lua](https://github.com/YimMenu-Lua/YimConfig/releases/latest) and place it inside the /includes folder.
 3. In your main script, add these globals:
     - `Config = require("YimConfig") -- You can name "Config" anything you want. You're gonna be calling it later to save and read values.`
     - `SCRIPT_NAME = "your_script_name" -- This global has to be exactly SCRIPT_NAME. Do not change it.`
