@@ -378,7 +378,7 @@ local function YimConfig()
 		local file, _ = io.open(script_json, "w")
 		if file == nil then
 			log.warning("Failed to write to " .. script_json)
-			gui.show_error("Lua Config", "Failed to write to " .. script_json)
+			gui.show_error("YimConfig", "Failed to write to " .. script_json)
 			return false
 		end
 		if DEFAULT_CONFIG == nil then
