@@ -23,20 +23,37 @@ Universal Config System For YimMenu-Lua
 ## Example Code
 
 ```Lua
+-- create a new tab
 config_test = gui.add_tab("Config Test")
-CFG         = require("YimConfig")
+
+-- We create a global named SCRIPT_NAME and give it a name that represents our script.
+-- It will be used by the config to create a json file.
+-- In this case, the file would be named "config_test.json"
 SCRIPT_NAME = "config_test"
+
+-- We create a global table named DEFAULT_CONFIG and place our variables inside along
+-- with their default values.
 DEFAULT_CONFIG = {
   bool_1 = false,
   bool_2 = true,
   string_1 = "a",
   number_1 = 1,
 }
+
+-- We require YimConfig. If we need to call this from another file,
+-- this must be global instead.
+local CFG = require("/includes/YimConfig")
+
+-- We define our variables by reading them from the config.
 local bool_1   = CFG.read("bool_1")
 local bool_2   = CFG.read("bool_2")
 local string_1 = CFG.read("string_1")
 local number_1 = CFG.read("number_1")
 config_test:add_imgui(function()
+ -- We can simply call our local variables that we defined above but
+ -- we're gonna be calling CFG.read() inside ImGui widgets instead.
+ -- That way, when we reset the config the values will update immediately.
+ -- Otherwise, we'll have to reload the script to see changes after resetting.
   bool_1, b1used = ImGui.Checkbox("First Bool", CFG.read("bool_1"))
   if b1used then
     CFG.save("bool_1", bool_1)
@@ -68,6 +85,7 @@ config_test:add_imgui(function()
   end
 end)
 ```
+
 ## Credits
 
 - [Harmless](https://github.com/harmless05) For the original code.
