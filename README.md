@@ -42,7 +42,7 @@ DEFAULT_CONFIG = {
 
 -- We require YimConfig. If we need to call this from another file,
 -- this must be global instead.
-local CFG = require("/includes/YimConfig")
+local CFG = require("YimConfig")
 
 -- We define our variables by reading them from the config.
 local bool_1   = CFG.read("bool_1")
