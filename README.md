@@ -1,9 +1,10 @@
 # YimConfig
 
-Universal Config System For YimMenu-Lua
+Universal Config System For YimMenu-Lua.
 
 > [!NOTE]
 > This is for script developers only.
+> Supports pretty encoding *(enabled by default)*.
 
 ## Setup
 
@@ -89,4 +90,4 @@ end)
 ## Credits
 
 - [Harmless](https://github.com/harmless05) For the original code.
-- [rxi](https://github.com/rxi) For the [json library](https://github.com/rxi/json.lua).
+- [Jeffrey Friedl's JSON.lua package](http://regex.info/blog/lua/json).
