@@ -1142,9 +1142,9 @@ YimConfig._credits_ = [[
       |                   ¤ Universal Config System For YimMenu-Lua ¤                          |
       |________________________________________________________________________________________|
       |                                                                                        |
-      |      - Inspired by Harmless: https://github.com/harmless05                |
+      |      - Inspired by Harmless: https://github.com/harmless05                             |
       |                                                                                        |
-      |      - Rewritten from scratch by [SAMURAI (xesdoog)](https://github.com/xesdoog)     |
+      |      - Rewritten from scratch by [SAMURAI (xesdoog)](https://github.com/xesdoog)       |
       |                                                                                        |
       |      - Uses JSON.lua package by Jeffrey Friedl: http://regex.info/blog/lua/json        |
       |                                                                                        |
