@@ -34,7 +34,7 @@ local CFG = YimConfig:New(script_name, default_config)
 ### Init Params
 
 - `script_name`: string: **Required:** The name of your script (or any name you want). Will be used to create and manage the `.json` file.
-- `default_config`: string: **Required:** The default config. Can be a single string or number value or a table. Must be provided and will be used to fall back to it if the config file fails to be created/read.
+- `default_config`: string/integer/table: **Required:** The default config. Can be a single string or number value or a table. Must be provided and will be used to fall back to it if the config file fails to be created/read.
 - `pretty_encoding`: boolean: **Optional:** Pretty format your save file instead of one single line *(if using a table config)*.
 - `indent`: number: **Optional:** Number of indent spaces if using pretty encoding *(defaults to 2)*.
 - `strict_parsing`: boolean: **Optional:** Used to guarantee decode-encode round-trip equivalency by marking Lua tables with metatables. Can be useful if you lose float precision after encoding and decoding a large float but can also cause issues in other applications like parsing empty strings.
