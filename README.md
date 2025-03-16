@@ -5,6 +5,7 @@ Universal Config System For YimMenu-Lua.
 > [!NOTE]
 > This is for script developers only.
 > Supports pretty encoding *(enabled by default)*.
+> 
 > Supports encryption *(Base64 + XOR)*.
 
 ## Setup
