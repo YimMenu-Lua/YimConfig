@@ -93,10 +93,10 @@ config_test:add_imgui(function()
 
     if ImGui.Button("Reset To Default") then
         CFG:Reset()
-        local bool_1 = CFG:ReadItem("bool_1")
-        local bool_2 = CFG:ReadItem("bool_2")
-        local string_1 = CFG:ReadItem("string_1")
-        local number_1 = CFG:ReadItem("number_1")
+        bool_1 = CFG:ReadItem("bool_1")
+        bool_2 = CFG:ReadItem("bool_2")
+        string_1 = CFG:ReadItem("string_1")
+        number_1 = CFG:ReadItem("number_1")
     end
 end)
 ```
