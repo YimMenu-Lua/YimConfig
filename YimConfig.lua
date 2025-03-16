@@ -1135,7 +1135,7 @@ end
 ---@class YimConfig
 YimConfig = {}
 YimConfig.__index = YimConfig
-YimConfig._version_ = "1.0.2"
+YimConfig._version_ = "1.0.3"
 YimConfig._credits_ = [[
       +----------------------------------------------------------------------------------------+
       |                                                                                        |
